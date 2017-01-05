@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		239CA3571E1AC3790077778E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA3561E1AC3790077778E /* AppDelegate.swift */; };
-		239CA3591E1AC3790077778E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA3581E1AC3790077778E /* ViewController.swift */; };
+		236774581E1E6B840033A08F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA3561E1AC3790077778E /* AppDelegate.swift */; };
+		236774591E1E6B840033A08F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA3581E1AC3790077778E /* ViewController.swift */; };
+		2367745A1E1E6B840033A08F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA3BF1E1AEEEB0077778E /* Constants.swift */; };
+		236774701E1E6CC50033A08F /* libSmartAdServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2367746E1E1E6CC50033A08F /* libSmartAdServer.a */; };
+		236774711E1E6CC50033A08F /* sas.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2367746F1E1E6CC50033A08F /* sas.bundle */; };
 		239CA35C1E1AC37A0077778E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239CA35A1E1AC37A0077778E /* Main.storyboard */; };
 		239CA35E1E1AC37B0077778E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 239CA35D1E1AC37B0077778E /* Assets.xcassets */; };
 		239CA3611E1AC37B0077778E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239CA35F1E1AC37B0077778E /* LaunchScreen.storyboard */; };
 		239CA36C1E1AC3830077778E /* SmartAdTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA36B1E1AC3830077778E /* SmartAdTestTests.swift */; };
 		239CA3771E1AC3830077778E /* SmartAdTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA3761E1AC3830077778E /* SmartAdTestUITests.swift */; };
-		239CA3991E1AE8F60077778E /* libSmartAdServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 239CA3971E1AE8F60077778E /* libSmartAdServer.a */; };
-		239CA39A1E1AE8F60077778E /* sas.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 239CA3981E1AE8F60077778E /* sas.bundle */; };
 		239CA39D1E1AE98A0077778E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239CA39C1E1AE98A0077778E /* Accelerate.framework */; };
 		239CA39F1E1AE9940077778E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239CA39E1E1AE9940077778E /* AdSupport.framework */; };
 		239CA3A11E1AE99C0077778E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239CA3A01E1AE99C0077778E /* AVFoundation.framework */; };
@@ -33,7 +34,6 @@
 		239CA3B91E1AEA170077778E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239CA3B81E1AEA170077778E /* SystemConfiguration.framework */; };
 		239CA3BB1E1AEA1C0077778E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239CA3BA1E1AEA1C0077778E /* UIKit.framework */; };
 		239CA3BD1E1AEA210077778E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239CA3BC1E1AEA210077778E /* WebKit.framework */; };
-		239CA3C01E1AEEEB0077778E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CA3BF1E1AEEEB0077778E /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +54,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2367745D1E1E6CC50033A08F /* SASAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAd.h; sourceTree = "<group>"; };
+		2367745E1E1E6CC50033A08F /* SASAdChoicesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdChoicesView.h; sourceTree = "<group>"; };
+		2367745F1E1E6CC50033A08F /* SASAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdView.h; sourceTree = "<group>"; };
+		236774601E1E6CC50033A08F /* SASAdViewContainerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdViewContainerCell.h; sourceTree = "<group>"; };
+		236774611E1E6CC50033A08F /* SASAdViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdViewDelegate.h; sourceTree = "<group>"; };
+		236774621E1E6CC50033A08F /* SASBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASBannerView.h; sourceTree = "<group>"; };
+		236774631E1E6CC50033A08F /* SASInterstitialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASInterstitialView.h; sourceTree = "<group>"; };
+		236774641E1E6CC50033A08F /* SASMediationAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASMediationAd.h; sourceTree = "<group>"; };
+		236774651E1E6CC50033A08F /* SASNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASNativeAd.h; sourceTree = "<group>"; };
+		236774661E1E6CC50033A08F /* SASNativeAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASNativeAdDelegate.h; sourceTree = "<group>"; };
+		236774671E1E6CC50033A08F /* SASNativeAdImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASNativeAdImage.h; sourceTree = "<group>"; };
+		236774681E1E6CC50033A08F /* SASNativeAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASNativeAdManager.h; sourceTree = "<group>"; };
+		236774691E1E6CC50033A08F /* SASNativeAdMediaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASNativeAdMediaView.h; sourceTree = "<group>"; };
+		2367746A1E1E6CC50033A08F /* SASNativeAdMediaViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASNativeAdMediaViewDelegate.h; sourceTree = "<group>"; };
+		2367746B1E1E6CC50033A08F /* SASNativeAdPlacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASNativeAdPlacement.h; sourceTree = "<group>"; };
+		2367746C1E1E6CC50033A08F /* SASReward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASReward.h; sourceTree = "<group>"; };
+		2367746D1E1E6CC50033A08F /* SASVideoEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASVideoEvent.h; sourceTree = "<group>"; };
+		2367746E1E1E6CC50033A08F /* libSmartAdServer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSmartAdServer.a; sourceTree = "<group>"; };
+		2367746F1E1E6CC50033A08F /* sas.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sas.bundle; sourceTree = "<group>"; };
 		239CA3531E1AC3780077778E /* SmartAdTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartAdTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239CA3561E1AC3790077778E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239CA3581E1AC3790077778E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,25 +86,6 @@
 		239CA3721E1AC3830077778E /* SmartAdTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartAdTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		239CA3761E1AC3830077778E /* SmartAdTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartAdTestUITests.swift; sourceTree = "<group>"; };
 		239CA3781E1AC3840077778E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		239CA3861E1AE8F60077778E /* SASAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAd.h; sourceTree = "<group>"; };
-		239CA3871E1AE8F60077778E /* SASAdChoicesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdChoicesView.h; sourceTree = "<group>"; };
-		239CA3881E1AE8F60077778E /* SASAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdView.h; sourceTree = "<group>"; };
-		239CA3891E1AE8F60077778E /* SASAdViewContainerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdViewContainerCell.h; sourceTree = "<group>"; };
-		239CA38A1E1AE8F60077778E /* SASAdViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdViewDelegate.h; sourceTree = "<group>"; };
-		239CA38B1E1AE8F60077778E /* SASBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASBannerView.h; sourceTree = "<group>"; };
-		239CA38C1E1AE8F60077778E /* SASInterstitialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASInterstitialView.h; sourceTree = "<group>"; };
-		239CA38D1E1AE8F60077778E /* SASMediationAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASMediationAd.h; sourceTree = "<group>"; };
-		239CA38E1E1AE8F60077778E /* SASNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASNativeAd.h; sourceTree = "<group>"; };
-		239CA38F1E1AE8F60077778E /* SASNativeAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASNativeAdDelegate.h; sourceTree = "<group>"; };
-		239CA3901E1AE8F60077778E /* SASNativeAdImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASNativeAdImage.h; sourceTree = "<group>"; };
-		239CA3911E1AE8F60077778E /* SASNativeAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASNativeAdManager.h; sourceTree = "<group>"; };
-		239CA3921E1AE8F60077778E /* SASNativeAdMediaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASNativeAdMediaView.h; sourceTree = "<group>"; };
-		239CA3931E1AE8F60077778E /* SASNativeAdMediaViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASNativeAdMediaViewDelegate.h; sourceTree = "<group>"; };
-		239CA3941E1AE8F60077778E /* SASNativeAdPlacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASNativeAdPlacement.h; sourceTree = "<group>"; };
-		239CA3951E1AE8F60077778E /* SASReward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASReward.h; sourceTree = "<group>"; };
-		239CA3961E1AE8F60077778E /* SASVideoEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASVideoEvent.h; sourceTree = "<group>"; };
-		239CA3971E1AE8F60077778E /* libSmartAdServer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSmartAdServer.a; sourceTree = "<group>"; };
-		239CA3981E1AE8F60077778E /* sas.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sas.bundle; sourceTree = "<group>"; };
 		239CA39C1E1AE98A0077778E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		239CA39E1E1AE9940077778E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		239CA3A01E1AE99C0077778E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -129,7 +129,7 @@
 				239CA3A11E1AE99C0077778E /* AVFoundation.framework in Frameworks */,
 				239CA39F1E1AE9940077778E /* AdSupport.framework in Frameworks */,
 				239CA39D1E1AE98A0077778E /* Accelerate.framework in Frameworks */,
-				239CA3991E1AE8F60077778E /* libSmartAdServer.a in Frameworks */,
+				236774701E1E6CC50033A08F /* libSmartAdServer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +150,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2367745B1E1E6CC50033A08F /* SmartAd */ = {
+			isa = PBXGroup;
+			children = (
+				2367745C1E1E6CC50033A08F /* headers */,
+				2367746E1E1E6CC50033A08F /* libSmartAdServer.a */,
+				2367746F1E1E6CC50033A08F /* sas.bundle */,
+			);
+			path = SmartAd;
+			sourceTree = "<group>";
+		};
+		2367745C1E1E6CC50033A08F /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				2367745D1E1E6CC50033A08F /* SASAd.h */,
+				2367745E1E1E6CC50033A08F /* SASAdChoicesView.h */,
+				2367745F1E1E6CC50033A08F /* SASAdView.h */,
+				236774601E1E6CC50033A08F /* SASAdViewContainerCell.h */,
+				236774611E1E6CC50033A08F /* SASAdViewDelegate.h */,
+				236774621E1E6CC50033A08F /* SASBannerView.h */,
+				236774631E1E6CC50033A08F /* SASInterstitialView.h */,
+				236774641E1E6CC50033A08F /* SASMediationAd.h */,
+				236774651E1E6CC50033A08F /* SASNativeAd.h */,
+				236774661E1E6CC50033A08F /* SASNativeAdDelegate.h */,
+				236774671E1E6CC50033A08F /* SASNativeAdImage.h */,
+				236774681E1E6CC50033A08F /* SASNativeAdManager.h */,
+				236774691E1E6CC50033A08F /* SASNativeAdMediaView.h */,
+				2367746A1E1E6CC50033A08F /* SASNativeAdMediaViewDelegate.h */,
+				2367746B1E1E6CC50033A08F /* SASNativeAdPlacement.h */,
+				2367746C1E1E6CC50033A08F /* SASReward.h */,
+				2367746D1E1E6CC50033A08F /* SASVideoEvent.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
 		239CA34A1E1AC3780077778E = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +208,7 @@
 		239CA3551E1AC3780077778E /* SmartAdTest */ = {
 			isa = PBXGroup;
 			children = (
-				239CA3841E1AE8E60077778E /* SmartAd */,
+				2367745B1E1E6CC50033A08F /* SmartAd */,
 				239CA3561E1AC3790077778E /* AppDelegate.swift */,
 				239CA3581E1AC3790077778E /* ViewController.swift */,
 				239CA35A1E1AC37A0077778E /* Main.storyboard */,
@@ -203,40 +237,6 @@
 				239CA3781E1AC3840077778E /* Info.plist */,
 			);
 			path = SmartAdTestUITests;
-			sourceTree = "<group>";
-		};
-		239CA3841E1AE8E60077778E /* SmartAd */ = {
-			isa = PBXGroup;
-			children = (
-				239CA3851E1AE8F60077778E /* headers */,
-				239CA3971E1AE8F60077778E /* libSmartAdServer.a */,
-				239CA3981E1AE8F60077778E /* sas.bundle */,
-			);
-			path = SmartAd;
-			sourceTree = "<group>";
-		};
-		239CA3851E1AE8F60077778E /* headers */ = {
-			isa = PBXGroup;
-			children = (
-				239CA3861E1AE8F60077778E /* SASAd.h */,
-				239CA3871E1AE8F60077778E /* SASAdChoicesView.h */,
-				239CA3881E1AE8F60077778E /* SASAdView.h */,
-				239CA3891E1AE8F60077778E /* SASAdViewContainerCell.h */,
-				239CA38A1E1AE8F60077778E /* SASAdViewDelegate.h */,
-				239CA38B1E1AE8F60077778E /* SASBannerView.h */,
-				239CA38C1E1AE8F60077778E /* SASInterstitialView.h */,
-				239CA38D1E1AE8F60077778E /* SASMediationAd.h */,
-				239CA38E1E1AE8F60077778E /* SASNativeAd.h */,
-				239CA38F1E1AE8F60077778E /* SASNativeAdDelegate.h */,
-				239CA3901E1AE8F60077778E /* SASNativeAdImage.h */,
-				239CA3911E1AE8F60077778E /* SASNativeAdManager.h */,
-				239CA3921E1AE8F60077778E /* SASNativeAdMediaView.h */,
-				239CA3931E1AE8F60077778E /* SASNativeAdMediaViewDelegate.h */,
-				239CA3941E1AE8F60077778E /* SASNativeAdPlacement.h */,
-				239CA3951E1AE8F60077778E /* SASReward.h */,
-				239CA3961E1AE8F60077778E /* SASVideoEvent.h */,
-			);
-			path = headers;
 			sourceTree = "<group>";
 		};
 		239CA39B1E1AE9890077778E /* Frameworks */ = {
@@ -374,7 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				239CA3611E1AC37B0077778E /* LaunchScreen.storyboard in Resources */,
-				239CA39A1E1AE8F60077778E /* sas.bundle in Resources */,
+				236774711E1E6CC50033A08F /* sas.bundle in Resources */,
 				239CA35E1E1AC37B0077778E /* Assets.xcassets in Resources */,
 				239CA35C1E1AC37A0077778E /* Main.storyboard in Resources */,
 			);
@@ -401,9 +401,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				239CA3591E1AC3790077778E /* ViewController.swift in Sources */,
-				239CA3571E1AC3790077778E /* AppDelegate.swift in Sources */,
-				239CA3C01E1AEEEB0077778E /* Constants.swift in Sources */,
+				236774581E1E6B840033A08F /* AppDelegate.swift in Sources */,
+				236774591E1E6B840033A08F /* ViewController.swift in Sources */,
+				2367745A1E1E6B840033A08F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
