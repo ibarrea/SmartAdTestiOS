@@ -10,6 +10,8 @@ import Foundation
 // IDs used by the Smart AdServer SDK to retrieve the ads.
 class Constants {
     
+    //TESTING
+    
     class func siteID() -> Int { return 45220 }
     class func baseURL() -> String { return "http://mobile.smartadserver.com" }
     
@@ -31,5 +33,19 @@ class Constants {
     class func nativeAdIconInTableViewPageID() -> String { return "720265" }
     class func nativeAdCoverInTableViewPageID() -> String { return "717857" }
     class func nativeAdMediaInTableViewPageID() -> String { return "692588" }
+    
+    
+    //REALES
+    
+//    class func siteID() -> Int { return 134577 }
+//    class func baseURL() -> String { return "http://mobile.smartadserver.com" }
+//    
+//    class func bannerFormatID() -> Int { return 49655 }
+//    class func interstitialFormatID() -> Int { return 12167 }
+//    
+//    class func bannerPageID() -> String { return "748531" }
+//    class func interstitialPageID() -> String { return "663264" }
+//    
+//    class func banner1InTableViewPageID() -> String { return "748531" }
     
 }

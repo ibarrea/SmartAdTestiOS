@@ -12,6 +12,7 @@
 #import "SASAdView.h"
 #import "SASBannerView.h"
 #import "SASInterstitialView.h"
+#import "SASAdViewContainerCell.h"
 #import "SASAd.h"
 
 #endif /* SmartAdTest_Bridging_Header_h */
