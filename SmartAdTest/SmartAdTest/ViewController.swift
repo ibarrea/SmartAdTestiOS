@@ -44,7 +44,7 @@ class ViewController: UITableViewController, SASAdViewDelegate {
     }
     
     func createBanners() {
-        self.banner1 = createBanner(Constants.banner1InTableViewPageID())
+        banner1 = createBanner(Constants.banner1InTableViewPageID())
 
     }
     func bannerFrameForView(_ view: UIView, height: CGFloat) -> CGRect {
@@ -83,9 +83,9 @@ class ViewController: UITableViewController, SASAdViewDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if isAdCell(indexPath) {
-            createBanners()
             // Attach relevant banner to the container cell
-            return SASAdViewContainerCell(for: banner1, in: tableView)
+            let bannerNew = createBanner(Constants.banner1InTableViewPageID())
+            return SASAdViewContainerCell(for: bannerNew, in: tableView)
 
         }
         let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
